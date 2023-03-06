@@ -1,0 +1,23 @@
+version: '3.4'
+services:
+  app:
+    build: .
+    image: terracap-php5.2
+    container_name: Terracap-Legado
+    ports:
+      - 88:80
+    volumes:
+      - .:/var/www/sistemasWeb # copia os projetos (GCF, GLP, GFOv2, ...) para dentro da pasta sistemasWeb
+      - ./arqweb:/var/www/sistemasWeb/arqweb # copia a pasta arqweb para a pasta sistemasWeb/arqweb > http://sv56/php-projects/arqweb-interna (RENOMEAR PARA arqweb)
+      - ./adodb:/var/www/adodb # copia a pasta adodb para a pasta adodb > http://sv56/php-projects/adodb
+    extra_hosts:
+      - "api-interna-devdif:10.50.0.100"
+      - "api-interna-devatual:10.50.0.27"
+      - "api-interna-homol:10.50.61.13"
+      - "gia-api-devdif:10.50.0.100"
+      - "gia-api-devatual:10.50.0.27"
+      - "gia-api-homol:10.50.61.13"
+      - "gap-api-devdif:10.50.0.100"
+      - "gap-api-devatual:10.50.0.27"
+      - "gap-api-homol:10.50.61.13"
+    command: "/usr/local/apache2/bin/apachectl -D FOREGROUND"
