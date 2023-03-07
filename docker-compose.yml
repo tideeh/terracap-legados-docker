@@ -6,9 +6,7 @@ services:
     ports:
       - 88:80
     volumes:
-      - .:/var/www/sistemasWeb # copia os projetos (GCF, GLP, GFOv2, ...) para dentro da pasta sistemasWeb
-      - ./arqweb:/var/www/sistemasWeb/arqweb # copia a pasta arqweb para a pasta sistemasWeb/arqweb > http://sv56/php-projects/arqweb-interna (RENOMEAR PARA arqweb)
-      - ./adodb:/var/www/adodb # copia a pasta adodb para a pasta adodb > http://sv56/php-projects/adodb
+      - .:/var/www
     extra_hosts:
       - "api-interna-devdif:10.50.0.100"
       - "api-interna-devatual:10.50.0.27"
