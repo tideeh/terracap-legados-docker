@@ -1,13 +1,13 @@
 ## Instalação
 <br/>
 
-1. Crie uma pasta e entre nela.
-<br/><br/>
-
-2. Clone este repositório:
+1. Clone este repositório:
    ```git
    git clone https://github.com/tideeh/terracap-legados-docker.git
    ```
+
+1. Entre na pasta `terracap-legados-docker`.
+<br/><br/>
 
 3. Clone o `adodb`:
    ```git
@@ -37,4 +37,4 @@
 <br/><br/><br/>
 
 * A estrutura deve ter o seguinte padrão:  
-![image](https://user-images.githubusercontent.com/33804453/223464964-79e95564-beb0-4c67-a1ab-ef762b98adff.png)
+![image](https://user-images.githubusercontent.com/33804453/223494169-9b0b6574-cbc2-4693-b8c6-8df9101e9fa2.png)
