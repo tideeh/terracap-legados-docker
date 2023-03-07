@@ -2,7 +2,7 @@ version: '3.4'
 services:
   app:
     build: .
-    image: terracap-php5.2.17
+    image: terracap-php5.2
     container_name: Terracap-Legado
     ports:
       - 88:80
