@@ -26,7 +26,7 @@ display_errors = On\n\
 error_reporting = E_ALL & ~E_DEPRECATED & ~E_NOTICE\n\
 log_errors = On\n\
 error_log = /usr/local/apache2/logs/error_log\n\
-include_path = ".:/var/www\n\
+include_path = ".:/var/www"\n\
 ' >> /usr/local/lib/php.ini \
 && sed -i -- "s/magic_quotes_gpc = On/magic_quotes_gpc = Off/g" /usr/local/lib/php.ini
 
